@@ -14,6 +14,15 @@ body{
 }
 /*HEADER*/
 /* Basic styling */
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
 nav {
   background: #faf9f9;
   padding: 5px 20px;
@@ -35,9 +44,8 @@ a:hover {
   margin-top: 20px;
 }
  .logo img{
-  width: 10%;
-  float: left;
   margin-right: 15px;
+  width: 30%;
 }
 .menu li {
   font-size: 16px;
@@ -48,23 +56,26 @@ a:hover {
 .toggle a {
   font-size: 20px;
 }
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
 
 /* Mobile menu */
 .menu {
-  background-color: #fff;
-  color: #000;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
-  position: fixed;
-  width: 100%;
-  height: auto;
-  top: 0;
-  left: 0;
-  display: flex;
-  z-index: 100;
-  font-size: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+background-color: #fff;
+color: #000;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+position: fixed;
+width: 100%;
+height: auto;
+top: 0;
+left: 0;
+display: flex;
+z-index: 100;
+font-size: 15px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 .toggle {
   order: 1;
@@ -85,6 +96,30 @@ a:hover {
 /* Navbar Toggle */
 .toggle {
   cursor:pointer;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
 }
 
 /* Tablet menu */
@@ -108,7 +143,7 @@ a:hover {
   .toggle {
       order: 2;
   }
- 
+   
 }
 
 /* Desktop menu */
@@ -137,10 +172,11 @@ a:hover {
   }
 }
 
+
 .home-title1{
   position: relative;
   margin-top: 135px;
-  background-color: #0097b2;
+  background-color: #b81e18;
   color: rgb(255, 255, 255);
 }
 
@@ -168,10 +204,11 @@ html {
  }
  .wrapper1 img {
   align-items: center;
-  max-width:500px; 
+  max-width:100%; 
+  width: 20%;
   float:left;
   margin-right: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
  }
  /* Slideshow container (home) */
 
@@ -371,10 +408,14 @@ header h1{
 }
 .footer img{
   border-radius: 50%;
-  width: 15%;
+  width: 20%;
   height: 20%;
 }
-
+.footer h2{
+  font-size: 20px;
+  color: white;
+  float:initial;
+}
 .footer .footer-row {
   display: flex;
   flex-wrap: wrap;
@@ -909,7 +950,6 @@ br {
 .copyirght{
   color: gray;
 }
-
 
 
 
